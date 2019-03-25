@@ -12,7 +12,7 @@ Keep in mind to use an auto formatter which allow to use eslint like `prettier` 
 Do not abuse comments. However every function should be descriped with the needed tags from [ESDoc](https://esdoc.org/)
 
 For example:
-```
+```jsx
   /**
    * Will attach the closing event for the given app object.
    * @private
@@ -32,7 +32,7 @@ Avoid functional components! Uses Classes for all react components and if needed
 
 Example:
 
-```
+```jsx
 import React, { PureComponent } from 'react';
 import SettingsIcon from 'mdi-material-ui/Settings';
 
@@ -71,7 +71,7 @@ Split actions and reducers in different files. Never use the classic react state
 ## Actions
 
 Actions should always be simple functions:
-```
+```jsx
 // Multi Screen Constants
 const SCREENS_FETCHING = 'SCREENS_FETCHING';
 
@@ -85,7 +85,7 @@ const _screensFetching = () => {
 ```
 
 As well as the async actions:
-```
+```jsx
 /**
  * Shows or closes Sidebar.
  * @param  {Boolean} open true/false
@@ -110,7 +110,7 @@ export const showHideSidebar = open => {
 
 Reducers should always be `switch cases`.
 
-```
+```jsx
 /**
  * Depending on which element triggered this reducer,
  * it will change the given state.
@@ -136,7 +136,7 @@ export default tabReducers;
 
 after that you should include all reducers like this:
 
-```
+```jsx
 // Import all reducers.
 import { combineReducers } from 'redux';
 
@@ -154,7 +154,7 @@ export default combineReducers({
 
 All styles all mainly oriented on the [material-ui](https://material-ui.com/getting-started/installation/). Avoid using normal css. instead use style `JavaScript` files:
 
-```
+```jsx
 export const MainStyles = theme => ({
   root: {
     display: 'flex'
@@ -174,7 +174,7 @@ export const MainStyles = theme => ({
 ```
  on top of that a theme must be defined as well:
 
- ```
+ ```jsx
  import { createMuiTheme } from '@material-ui/core/styles';
 
  export const theme = createMuiTheme({
