@@ -1,0 +1,60 @@
+{
+  "name": "basic-condition",
+  "version": "1.0.0",
+  "description": "this will show you example files on how to build projects with constant quality",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/electron ./dist/dev/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:react": "node ./parcel-development-react.js",
+    "dev:electron": "node ./parcel-development-electron.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Megajin/basic-condition.git"
+  },
+  "author": "Güney Jung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Megajin/basic-condition/issues"
+  },
+  "homepage": "https://github.com/Megajin/basic-condition#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "electron-builder": "^20.38.5",
+    "esdoc": "^1.1.0",
+    "esdoc-ecmascript-proposal-plugin": "^1.0.0",
+    "esdoc-standard-plugin": "^1.0.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "parcel-bundler": "^1.11.0"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
+    "classnames": "^2.2.6",
+    "echarts": "^4.1.0",
+    "electron": "^4.0.3",
+    "immutable": "^4.0.0-rc.12",
+    "mdi-material-ui": "^5.10.0",
+    "moment": "^2.24.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-native-vector-icons": "^6.2.0",
+    "react-redux": "^6.0.0",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-swipeable-views": "^0.13.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  }
+}
